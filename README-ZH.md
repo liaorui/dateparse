@@ -1,7 +1,7 @@
 
 [[English](README.md) | 中文]
 
-将任意格式的日期字符串转换成ZonedDateTime对象。来自Golang项目[dateparse](https://github.com/araddon/dateparse)。  
+将任意格式的日期字符串转换成ZonedDateTime对象。核心代码来自Golang项目[dateparse](https://github.com/araddon/dateparse)，通过JNA进行调用。 
 
 用法：
 ```java

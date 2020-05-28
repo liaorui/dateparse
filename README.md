@@ -1,7 +1,7 @@
 
 [English | [中文](README-ZH.md)]
 
-Java Parse many date strings without knowing format in advance. Inspired by Golang Project [dateparse](https://github.com/araddon/dateparse).
+Java Parse many date strings without knowing format in advance. Inspired by Golang Project [dateparse](https://github.com/araddon/dateparse). Invoke the golang code with JNA.  
 
 ### Usage：
 ```java
