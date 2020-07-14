@@ -2,7 +2,8 @@ package io.github.araddon;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,9 +22,9 @@ import java.util.TimeZone;
  * @date 2020/5/27
  * @see <a href="https://github.com/araddon/dateparse"></a>
  */
-@Slf4j
 public class DateParse {
-    private static LibDate INSTANCE = (LibDate) Native.load("date", LibDate.class);
+    private static final Logger log = LoggerFactory.getLogger(DateParse.class);
+    private static LibDate INSTANCE = (LibDate) Native.loadLibrary("date", LibDate.class);
 
     /**
      * Normal parse.  Equivalent Timezone rules as time.Parse()
